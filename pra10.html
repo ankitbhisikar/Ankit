@@ -1,0 +1,249 @@
+<html>
+<head>
+  <title> Watches store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-gradient {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: rgb(251, 250, 250);
+      padding: 80px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">TimeHub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Watches</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-gradient">
+  <div class="container">
+    <h1 class="display-4">Premium Watches Collection</h1>
+    <p class="lead">Timeless designs crafted for elegance and performance</p>
+  </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="container mt-3">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Watches</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Watch Cards -->
+<div class="container mt-4">
+  <div class="row g-4">
+
+    <!-- Example Watch Cards -->
+    <!-- WATCH 1 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="data:image/jpeg;base64,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">
+        <div class="card-body">
+          <h5 class="card-title">Classic Black</h5>
+          <p class="card-text">₹3,999 - Minimalist analog design</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal1">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATCH 2 to 9 -->
+    <!-- Just duplicate and change content -->
+    <!-- For brevity, here’s WATCH 2 to WATCH 9 quickly -->
+
+    <!-- You can copy/paste this block and adjust titles and ids -->
+    <!-- WATCH 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="watch silver.jpg" 
+        class="card-img-top" alt="Watch 2">
+        <div class="card-body">
+          <h5 class="card-title">Silver Dial</h5>
+          <p class="card-text">₹4,299 - Stainless steel build</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal2">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATCH 3 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="sport watch 3.png" 
+        class="card-img-top" alt="Watch 3">
+        <div class="card-body">
+          <h5 class="card-title">Chrono Sport</h5>
+          <p class="card-text">₹5,499 - Sporty look with stopwatch</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal3">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATCH 4 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="gold edge.jpg" class="card-img-top" alt="Watch 4">
+        <div class="card-body">
+          <h5 class="card-title">Golden Edge</h5>
+          <p class="card-text">₹6,999 - Elegant golden finish</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal4">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATCH 5 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="WhatsApp Image 2025-05-08 at 16.12.51_8736e346.jpg" class="card-img-top" alt="Watch 5">
+        <div class="card-body">
+          <h5 class="card-title">Urban Grey</h5>
+          <p class="card-text">₹2,999 - Stylish everyday watch</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal5">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATCH 6 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="6.jpg" class="card-img-top" alt="Watch 6">
+        <div class="card-body">
+          <h5 class="card-title">Leather Pro</h5>
+          <p class="card-text">₹3,499 - Leather strap, water resistant</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal6">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATCH 7 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="OIP.jpeg" class="card-img-top" alt="Watch 7">
+        <div class="card-body">
+          <h5 class="card-title">Modern silver</h5>
+          <p class="card-text">₹1995 - Unique blue dial</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal7">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATCH 8 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="vintage.jpg" class="card-img-top" alt="Watch 8">
+        <div class="card-body">
+          <h5 class="card-title">Vintage Brown</h5>
+          <p class="card-text">₹3,299 - Classic vintage vibe</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal8">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATCH 9 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRKO_x7TiLWfnW47Ejsx1sTSA-EguRDG_1BwbH_TkVgEV3hhCfKygPCE8R383aR6INA6xPMv2PcWXDHmpA01FF175tR1wMiR_Yzk6mqvF-umKXGdAAjgzcS7g&usqp=CAc" class="card-img-top" alt="Watch 9">
+        <div class="card-body">
+          <h5 class="card-title">Digital Smart</h5>
+          <p class="card-text">₹5,999 - </p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal9">View</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- WATCH 10 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="71E8iEWXY9L.jpg" class="card-img-top" alt="Watch 10">
+        <div class="card-body">
+          <h5 class="card-title">white Classic</h5>
+          <p class="card-text">₹8,299 - Smart Watch vibe</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal8">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATCH 11 -->
+    <div class="col-md-4">
+        <div class="card">
+          <img src="OIP (1).jpeg" class="card-img-top" alt="Watch 11">
+          <div class="card-body">
+            <h5 class="card-title">Vintage Brown</h5>
+            <p class="card-text">₹6,299 - Royal Golden vibe</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal8">View</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- WATCH 12 -->
+    <div class="col-md-4">
+        <div class="card">
+          <img src="OIP (2).jpeg" class="card-img-top" alt="Watch 12">
+          <div class="card-body">
+            <h5 class="card-title">Vintage Brown</h5>
+            <p class="card-text">₹100000 -primium Classic  vibe</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal8">View</button>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+</div>
+
+<!-- Modals for Watches -->
+<!-- You can add modal bodies like shown previously (Watch 1 example) -->
+<!-- Here's just one sample modal structure to duplicate -->
+
+<!-- WATCH 1 Modal -->
+<div class="modal fade" id="watchModal1" tabindex="-1" aria-labelledby="watchModal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="watchModal1Label">Classic Black Watch</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+        <form>
+          <div class="mb-3">
+            <label for="qty1" class="form-label">Quantity</label>
+            <input type="number" class="form-control" id="qty1" min="1" value="1">
+          </div>
+          <button type="submit" class="btn btn-success">Add to Cart</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Repeat similar modal structures for Watch 2 to 9 as needed -->
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3 mt-5">
+  <p class="mb-0">&copy; 2025 TimeHub. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

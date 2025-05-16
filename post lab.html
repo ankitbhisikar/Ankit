@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #02b7f9, #0e0d0e);
+            color: rgb(11, 11, 11);
+            padding: 80px 0;
+            text-align: center;
+        }
+        /* Custom style for card image height if needed */
+        .card-img-top {
+            height: 200px; /* Adjust as needed */
+            object-fit: cover; /* Ensure image covers the area without distortion */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">TimeHub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="hero-gradient">
+    <div class="container">
+        <h1 class="display-4">Rolex primium Watch Collection</h1>
+        <p class="lead">Timeless designs crafted for elegance and performance</p>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Watches</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="container mt-4">
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="royal blue.jpeg" class="card-img-top" alt="Watch 1">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised Navy Blue 1.45CT Diamond </h5>
+                    <p class="card-text">₹5,79,906 - Stainless Steel Datejust Automatic</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal1">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="royal gold.jpeg" class="card-img-top" alt="Watch 2">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Custom Champagne 2.85CT Diamond</h5>
+                    <p class="card-text">₹7,53,278 - Stainless Steel Datejust Automatic</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal2">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="royal green.jpeg" class="card-img-top" alt="Watch 3">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Custom Royal Green 3.5Ct Diamond </h5>
+                    <p class="card-text">₹9,40,181 - Stainless Steel Datejust Automatic </p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal3">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="royal nevy blue.jpeg" class="card-img-top" alt="Watch 4">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Custom Navy Blue 3.05CT Diamond 18K</h5>
+                    <p class="card-text">₹8,12,055 -Yellow Gold Stainless Steel Datejust</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal4">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="silver with gold.jpeg" class="card-img-top" alt="Watch 5">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised Champagne Diamond 18K </h5>
+                    <p class="card-text">₹7,70,192 -Yellow Gold Stainless Steel Datejust </p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal5">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="silver.jpeg" class="card-img-top" alt="Watch 6">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised Silver 2.8CT Diamond </h5>
+                    <p class="card-text">₹7,82,878 - Stainless Steel Datejust Automatic </p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal6">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="aqua blue.jpeg" class="card-img-top" alt="Watch 7">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised Aquamarine Blue MOP Diamond</h5>
+                    <p class="card-text">₹5,32,969 - Stainless Steel Datejust </p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal7">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="black.jpeg" class="card-img-top" alt="Watch 8">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised Green Diamond 18K </h5>
+                    <p class="card-text">₹10,66,954 - Yellow Gold Stainless Steel Datejust</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal8">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="th (1).jpeg" class="card-img-top" alt="Watch 9">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised Forest Green Diamond </h5>
+                    <p class="card-text">₹7,40,592 - Stainless Steel Datejust</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal9">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="sky blue.jpeg" class="card-img-top" alt="Watch 10">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised Sky Blue Diamond</h5>
+                    <p class="card-text">₹6,85,621 - Stainless Steel Datejust</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal10">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="gold.jpeg" class="card-img-top" alt="Watch 11">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised MOP 4CT Diamond </h5>
+                    <p class="card-text">₹21,66,468 - Stainless Steel Day-Date</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal11">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="green.jpeg" class="card-img-top" alt="Watch 12">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised Royal Green MOP Diamond</h5>
+                    <p class="card-text">₹5,32,969-Stainless Steel Datejust</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal12">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="pink.jpeg" class="card-img-top" alt="Watch 13">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised MOP Diamond 18K </h5>
+                    <p class="card-text">₹7,91,335-Yellow Gold Stainless Steel Datejust</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal13">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="gray.jpeg" class="card-img-top" alt="Watch 14">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Customised Diamond 18K </h5>
+                    <p class="card-text">₹7,70,192 -Yellow Gold Stainless Steel Datejust</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#watchModal14">View</button>
+                </div>
+            </div>
+        </div>
+        </div> </div>
+
+
+<div class="modal fade" id="watchModal1" tabindex="-1" aria-labelledby="watchModal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal1Label">Rolex Navy blue Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty1" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty1" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal2" tabindex="-1" aria-labelledby="watchModal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal2Label">Rolex gold Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty2" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty2" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal3" tabindex="-1" aria-labelledby="watchModal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal3Label">Rolex green Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty3" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty3" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal4" tabindex="-1" aria-labelledby="watchModal4Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal4Label">Rolex blue Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty4" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty4" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal5" tabindex="-1" aria-labelledby="watchModal5Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal5Label">Rolex gold Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty5" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty5" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal6" tabindex="-1" aria-labelledby="watchModal6Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal6Label">Rolex silver Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty6" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty6" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal7" tabindex="-1" aria-labelledby="watchModal7Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal7Label">Rolex Aquamarine Blue Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty7" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty7" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal8" tabindex="-1" aria-labelledby="watchModal8Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal8Label">Rolex black Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty8" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty8" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal9" tabindex="-1" aria-labelledby="watchModal9Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal9Label">Rolex Forest Green Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty9" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty9" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal10" tabindex="-1" aria-labelledby="watchModal10Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal10Label">Rolex Sky Blue Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty10" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty10" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal11" tabindex="-1" aria-labelledby="watchModal11Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal11Label">Rolex gold Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty11" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty11" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal12" tabindex="-1" aria-labelledby="watchModal12Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal12Label">Rolex dark-green Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty12" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty12" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal13" tabindex="-1" aria-labelledby="watchModal13Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal13Label">Rolex pink Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty13" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty13" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="watchModal14" tabindex="-1" aria-labelledby="watchModal14Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="watchModal14Label">Rolex gray Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Simple, elegant analog design with black leather strap. Ideal for office and casual wear.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="qty14" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="qty14" min="1" value="1">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="bg-dark text-light text-center py-3 mt-5">
+    <p class="mb-0">&copy; https://www.rolex.com/en-us</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
